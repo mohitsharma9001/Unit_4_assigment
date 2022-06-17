@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    input{
+        height: 30px;
+        width: 250px;
+        font-size: larger;
+        margin-top: 100px;
+    }
+    button{
+        width: 120px;
+        height: 30px;
+        font-size: larger;
+    }
+    div{
+      text-align: center;
+    }
+</style>
+<body>
+    <div>
+        <h2 id="output"></h2>
+        <input type="number" placeholder="Enter 1st Number" value="" id="num" >
+        <input type="number" placeholder="Enter 2nd Number" value="" id="numb" ><br><br>
+        <button onclick="add()">Add</button>
+        <button onclick="subtract()">Subtract</button>
+        <button onclick="multiply()">Multiply</button>
+        <button onclick="divide()">Divide</button>
+    </div>
+   
+</body>
+</html>
+<script>
+function add(){
+var num1 = document.querySelector("#num").value;
+var num2 = document.querySelector("#numb").value;
+var sum = num1+num2
+document.querySelector("#output").innerText = sum
+}
+function subtract(){
+var num1 = document.querySelector("#num").value;
+var num2 = document.querySelector("#numb").value;
+var sum = num1-num2
+document.querySelector("#output").innerText = sum
+}
+function multiply(){
+var num1 = document.querySelector("#num").value;
+var num2 = document.querySelector("#numb").value;
+var sum = num1*num2
+document.querySelector("#output").innerText = sum
+}
+function divide(){
+var num1 = document.querySelector("#num").value;
+var num2 = document.querySelector("#numb").value;
+var sum = num1/num2
+document.querySelector("#output").innerText = sum
+}
+</script>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" placeholder="Enter Your age" value="" id="age">
+    <button onclick="GetData()">Check age</button>
+    <p id="pTag"></p>
+</body>
+</html>
+<script>
+   function GetData(){
+    var data = document.querySelector('input').value;
+    if(data >18){
+        document.querySelector("#pTag").innerText = "You can drive in India!"
+   
+    }else if(data < 18 ){
+        document.querySelector("#pTag").innerText = "You can't drive in India"
+        
+    }else if(data == 18){
+        document.querySelector("#pTag").innerText = "You are just old enough to drive in India!"
+   
+    }
+   }
+</script>
